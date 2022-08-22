@@ -1,0 +1,25 @@
+<p>dummy-user works!</p>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of dummyUsers">
+                <td>{{user.userId}}</td>
+                <td>{{user.id}}</td>
+                <td>{{user.title}}</td>
+                <td>{{user.completed}}</td>
+                <td>{{date | date:'short'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

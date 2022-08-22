@@ -1,0 +1,28 @@
+<p>display-user works! Creating a HttpClient to retrive the Data from the API</p>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>User Name</th>
+                <th>Password</th>
+                <th>Birth Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{users.id}}</td>
+                <td>{{users.firstname}}</td>
+                <td>{{users.lastname}}</td>
+                <td>{{users.email}}</td>
+                <td>{{users.username}}</td>
+                <td>{{users.password}}</td>
+                <td>{{users.birthdate}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
